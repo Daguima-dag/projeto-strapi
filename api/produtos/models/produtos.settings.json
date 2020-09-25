@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "produtos",
+  "info": {
+    "name": "Produtos"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Nome": {
+      "type": "string"
+    },
+    "Foto": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "NoEstoque": {
+      "type": "boolean"
+    },
+    "Preco": {
+      "type": "decimal"
+    },
+    "categorias": {
+      "via": "produtos",
+      "collection": "categoria"
+    }
+  }
+}

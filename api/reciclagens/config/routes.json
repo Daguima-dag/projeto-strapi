@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/reciclagens",
+      "handler": "reciclagens.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/reciclagens/count",
+      "handler": "reciclagens.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/reciclagens/:id",
+      "handler": "reciclagens.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/reciclagens",
+      "handler": "reciclagens.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/reciclagens/:id",
+      "handler": "reciclagens.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/reciclagens/:id",
+      "handler": "reciclagens.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

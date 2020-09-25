@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shows",
+  "info": {
+    "name": "Shows"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "datashow": {
+      "type": "datetime"
+    },
+    "nomeshow": {
+      "type": "string"
+    },
+    "endereco": {
+      "type": "text"
+    },
+    "Foto": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

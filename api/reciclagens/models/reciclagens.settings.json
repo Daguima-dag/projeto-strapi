@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reciclagens",
+  "info": {
+    "name": "Reciclagens"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Peso": {
+      "type": "decimal"
+    },
+    "Data": {
+      "type": "datetime"
+    }
+  }
+}
